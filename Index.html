@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeLab</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #14213d;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 30px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .signup {
+            background-color: #ffb703;
+            color: black;
+            padding: 8px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #315bea;
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .get-started {
+            background-color: #ffb703;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Cards Section */
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #eef2ff;
+            text-align: center;
+            padding: 22px 10px;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav {
+                padding: 12px 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            nav ul li a {
+                font-size: 12px;
+            }
+
+            .logo {
+                font-size: 17px;
+            }
+
+            .signup {
+                padding: 7px 10px;
+            }
+
+            .hero h1 {
+                font-size: 23px;
+            }
+
+            .cards {
+                gap: 10px;
+                padding: 15px;
+                flex-wrap: wrap;
+            }
+
+            .card {
+                flex: 1 1 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">CodeLab</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="signup">Sign up</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Learn Web Development</h1>
+
+        <p>Start from zero. Build real projects.</p>
+
+        <button class="get-started">
+            Get started
+        </button>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="cards" id="courses">
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Build the structure</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Make it beautiful</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Make it smart</p>
+        </div>
+
+        <div class="card">
+            <h3>Git</h3>
+            <p>Save your work</p>
+        </div>
+
+    </section>
+
+</body>
+</html>
